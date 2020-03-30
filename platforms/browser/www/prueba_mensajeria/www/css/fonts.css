@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "charlotte";
+  src: url("../fonts/charlotte.ttf");
+}
+
+@font-face {
+  font-family: "antonellie";
+  src: url("../fonts/antonellie.ttf");
+}
+
+.font-charlotte {
+	font-family: "charlotte";
+}
+
+.font-antonellie {
+	font-family: "antonellie";
+}
+
+.size-big {
+	font-size: 10em;
+}

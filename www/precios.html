@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Rapimotto</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/estilos.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel=”shortcut icon” type=”image/png” href="img/logo4.png" src="img/logo4.png"/>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(carga, 1000);
+      function carga(){
+        document.getElementById('loader').className = 'hide';
+        document.getElementById('contenido').className = 'center';
+      }
+    })
+  </script>
+  <div class="center section" style="" id="loader">
+    <img src="img/rappi fondo.png" height="100%" width="100%" style="" >
+    <img src="img/logo4.png" style="" id="aline" alt="" width="">
+  </div>
+
+  <div class="center hide" id="contenido">
+    <div class="container">
+       <h1 class="center"><img  src="img/logo4.png"  height="300px" alt=""></h1>
+<table class="highlight centered shadow responsive-table">
+        <h3>Horarios</h3>
+        <thead>
+          <tr>
+              <th>Dia</th>
+              <th>Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>7:00 Am - 5:00 Pm</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>7:00 Am - 5:00 Pm</td>
+            </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>7:00 Am - 5:00 Pm</td>
+            </tr>
+             <tr>
+            <td>Jueves</td>
+            <td>7:00 Am - 3:00 Pm</td>
+            </tr>
+             <tr>
+            <td>Viernes</td>
+            <td>7:00 Am - 3:00 Pm</td>
+            </tr>
+        </tbody>
+      </table>
+        
+      <table class="highlight centered shadow ">
+        <h3>Precios</h3>
+        <thead>
+          <tr>
+              <th>Envio</th>
+              <th>Ciudad</th>
+              <th>Precio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Documento</td>
+            <td>Medellin</td>
+            <td>$100.000.000</td>
+          </tr>
+          <tr>
+            <td>Domicilio</td>
+            <td>Valle de aburra</td>
+            <td>$3.700</td>
+          </tr>
+          <tr>
+            <td>Paquete</td>
+            <td>El carmen</td>
+            <td>$50.000</td>
+          </tr><tr>
+            <td>Documento</td>
+            <td>Medellin</td>
+            <td>$100.000.000</td>
+          </tr>
+          <tr>
+            <td>Mercado</td>
+            <td>Valle de aburra</td>
+            <td>$3.700</td>
+          </tr>
+          <tr>
+            <td>Mercado</td>
+            <td>El carmen</td>
+            <td>$50.000</td>
+          </tr>
+        </tbody>
+      </table>
+            
+
+  </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <style>
+    .shadow{
+      background: rgba(0, 0, 0, 0.3);
+    }
+    body
+    {
+      background: url("img/rappi fondo.png");
+      background-size: 150% 150% ; 
+    }
+    #aline{
+      width: 350px;
+      height: 350px;
+      margin-top: -80px;
+      margin-left: -170px;
+      left: 50%;
+      top: 30%;
+      position: fixed;
+      animation-name:logo;
+      animation-duration: 2s;
+      animation-iteration-count:6;  
+    }
+
+    @keyframes logo{
+      0%{
+        transform: translate(0rem) rotate(0deg);
+      }
+      30%{
+        transform: translate(1rem) rotate(49deg);
+      }
+      60%{
+        transform: translate(-1rem) rotate(-51deg);
+      }
+      100%{
+        transform: translate(0rem) rotate(0deg);
+      }
+
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <script type="text/javascript" src="js/geturl.js"></script>
+        <title>Mensajería</title>
+    </head>
+
+    <body>
+
+<div class="container">
+    <h1 class="font-antonellie center">Paquetes</h1>
+   <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="ciudad_origen" class="autocomplete">
+          <label for="ciudad_origen">Ciudad de origen</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="ciudad_destino" class="autocomplete">
+          <label for="ciudad_destino">Ciudad de destino</label>
+        </div>
+      </div>
+        <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+        
+          <input id="alto" step="any" type="number" max="50" class="validate">
+          <label for="alto">Alto<em>(Max.50cm)</em></label>
+        </div>
+        <div class="input-field col s6">
+          <input id="Largo" step="any" type="number" max="50" class="validate">
+          <label for="Largo">Largo<em>(Max.50cm)</em></label>
+        </div>
+         <div class="input-field col s6">
+          <input id="Ancho" type="number" max="50" step="any" class="validate">
+          <label for="Ancho">Ancho<em>(Max.50cm)</em></label>
+        </div>
+                 <div class="input-field col s6">
+          <input id="Peso" max="60"type="number" step="any" class="validate">
+          <label for="Peso">Peso<em>(Máx.60kg)</em></label>
+        </div>
+      </div>
+    </form>
+  </div>
+    </div>
+    
+  </div>
+
+</div>
+
+    </body>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+           $(document).ready(function(){
+        $('input.autocomplete').autocomplete({
+    data: {
+      "Abejorral(Antioquia)": null,
+      "Alejandria(Antioquia)": null,
+      "Argelia(Antioquia)": null,
+      "Carmen de Viboral(Antioquia)":null,
+      "Cocorna(Antioquia)": null,
+      "Concepcion(Antioquia)": null,
+      "El Peñol(Antioquia)": null,
+      "El Retiro(Antioquia)": null,
+      "El Santuario(Antioquia)": null,
+      "Granada(Antioquia)": null,
+      "Guarne(Antioquia)": null,
+      "Guatape(Antioquia)": null,
+      "La Ceja(Antioquia)": null,
+      "La Union(Antioquia)": null,
+      "Marinilla(Antioquia)": null,
+      "Nariño(Antioquia)": null,
+      "Rionegro(Antioquia)": null,
+      "San Carlos(Antioquia)": null,
+      "San Francisco(Antioquia)": null,
+      "San Luis(Antioquia)": null,
+      "San Rafael(Antioquia)": null,
+      "San Vicente(Antioquia)": null,
+      "Sonson(Antioquia)": null,
+      "Medellin(Antioquia)": null,
+      "Envigado(Antioquia)": null,
+      "Sabaneta(Antioquia)": null,
+      "Itagui(Antioquia)": null,
+      "Bello(Antioquia)": null,
+      
+    },
+    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+    onAutocomplete: function(val) {
+      // Callback function when value is autcompleted.
+    },
+    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+  });       
+          });
+    </script>
+</html>

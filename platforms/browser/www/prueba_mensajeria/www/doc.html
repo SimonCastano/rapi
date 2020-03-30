@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/jquery.mobile.custom.structure.css">
+        <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.custom.theme.css">
+        <link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
+    	<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+        <script type="text/javascript" src="js/geturl.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <title>Mensajería</title>
+    </head>
+
+    <body>
+
+<div class="container">
+    
+
+<h1>Documentos</h1>
+
+     <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="ciudad_origen" class="autocomplete">
+          <label for="ciudad_origen">Ciudad de origen</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="destino" class="autocomplete">
+          <label for="destino">Ciudad de destino</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <input type="number" id="peso" step="any" class="validate" max="2"  >
+          <label for="peso">Peso maximo (2kg)</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input type="number" id="valor" class="validate"  step="any">
+          <label for="valor">Valor declarado</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="origen" class="validate">
+          <label for="origen">Nombre de empresa o persona</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="recogida" class="validate">
+          <label for="recogida">Direccion de recogida</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="number" id="numero" class="validate">
+          <label for="numero">Numero de celular</label>
+        </div>
+        </div>
+        <div class="row">
+
+        <div class="input-field col s6">
+         <input type="text" class="datepicker timepiker" id="fecha">
+          <label for="fecha">fecha</label>
+        </div>
+      
+               <div class="input-field col s6">
+      <input type="text" class="timepicker" id="hora">
+          <label for="hora">Hora</label>
+        </div>
+      </div>
+
+       <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Descripcion de la documentacion</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+ 	</div>
+
+ <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+    </body>
+    <script>
+
+     
+           $(document).ready(function(){
+        $('input.autocomplete').autocomplete({
+    data: {
+      "Abejorral(Antioquia)": null,
+      "Alejandria(Antioquia)": null,
+      "Argelia(Antioquia)": null,
+      "Carmen de Viboral(Antioquia)":null,
+      "Cocorna(Antioquia)": null,
+      "Concepcion(Antioquia)": null,
+      "El Peñol(Antioquia)": null,
+      "El Retiro(Antioquia)": null,
+      "El Santuario(Antioquia)": null,
+      "Granada(Antioquia)": null,
+      "Guarne(Antioquia)": null,
+      "Guatape(Antioquia)": null,
+      "La Ceja(Antioquia)": null,
+      "La Union(Antioquia)": null,
+      "Marinilla(Antioquia)": null,
+      "Nariño(Antioquia)": null,
+      "Rionegro(Antioquia)": null,
+      "San Carlos(Antioquia)": null,
+      "San Francisco(Antioquia)": null,
+      "San Luis(Antioquia)": null,
+      "San Rafael(Antioquia)": null,
+      "San Vicente(Antioquia)": null,
+      "Sonson(Antioquia)": null,
+      "Medellin(Antioquia)": null,
+      "Envigado(Antioquia)": null,
+      "Sabaneta(Antioquia)": null,
+      "Itagui(Antioquia)": null,
+      "Bello(Antioquia)": null,
+      
+    },
+    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+    onAutocomplete: function(val) {
+      // Callback function when value is autcompleted.
+    },
+    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+  });       
+          });
+
+             document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+   $(document).ready(function(){
+    $('.time').timepiker();
+  });
+ 
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.timepicker');
+    var instances = M.Timepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.timepicker').timepicker();
+  });
+
+  $('#textarea1').val('');
+  M.textareaAutoResize($('#textarea1'));
+        
+    </script>
+
+</html>

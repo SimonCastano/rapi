@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Rapimotto</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/estilos.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel=”shortcut icon” type=”image/png” href="img/logo4.png" src="img/logo4.png"/>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(carga, 2000);
+      function carga(){
+        document.getElementById('loader').className = 'hide';
+        document.getElementById('contenido').className = 'center';
+      }
+    })
+  </script>
+  <div class="center section" style="" id="loader">
+    <img src="img/rappi fondo.png" height="100%" width="100%" style="" >
+    <img src="img/logo4.png" style="" id="aline" alt="" width="">
+    <h5 id="aline"><strong>Envio para Persona</strong></h5>
+  </div>
+  <div class="center hide" id="contenido">
+    <div class="container">
+      <h1 class="center"><img  src="img/logo4.png"  height="300px" alt=""></h1>
+
+      <div class="">
+        <h4><strong>Tipo de envío:</strong></h4>
+        <div class="row center">
+          <div class="col s6 m6"><a href="mercado.html" class="button">Envio de mercado</a></div>
+          <div class="col s6 m6"><a href="domicilio.html" class="button">Domicilio</a></div>
+        </div>
+        <div class="row center">
+          <div class="col s6 m6"><h6>Aplica solo para valle de aburra y oriente Antioqueño </h6></div>
+          <div class="col s6 m6"><h6>Solo para valle de aburra (sin hora)</h6></div>
+        </div>
+        <hr/>
+      <!--   <a href="" class="button2">Consulta precios y horarios.</a> -->
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <style>
+    body
+    {
+      background: url("img/rappi fondo.png");
+      background-size: 150% 150% ; 
+    }
+    #aline{
+      width: 350px;
+      height: 350px;
+      margin-top: -80px;
+      margin-left: -170px;
+      left: 50%;
+      top: 30%;
+      position: fixed;
+      animation-name:logo;
+      animation-duration: 2s;
+      animation-iteration-count:6;  
+    }
+
+    @keyframes logo{
+      0%{
+        transform: translate(0rem) rotate(0deg);
+      }
+      30%{
+        transform: translate(1rem) rotate(49deg);
+      }
+      60%{
+        transform: translate(-1rem) rotate(-51deg);
+      }
+      100%{
+        transform: translate(0rem) rotate(0deg);
+      }
+
+    }
+  </style>
+</body>
+</html>
